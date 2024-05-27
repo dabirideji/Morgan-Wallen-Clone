@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="../../images/WALLEN-000_SiteExp_Favicon-01_small.png" type="image/png">
+  <link rel="shortcut icon" href="../../morganwallenHome/favicon-32x32.png" type="image/png">
+
+    <style>
+        .social-logo {
+    width: 50px;  /* Adjust the size as needed */
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+    </style>
+    <script>
+        function follow(platform) {
+    let url = '';
+
+    switch(platform) {
+        case 'tiktok':
+            url = 'https://www.tiktok.com/@morganwallencole_fans?_t=8mh5hcKMqfu&_r=1';
+            break;
+        case 'facebook':
+            url = 'https://www.facebook.com/profile.php?id=61560461390816';
+            break;
+        case 'instagram':
+            url = 'https://www.instagram.com/morganwallan_official_fans?igsh=ODZwc3BvNW9oYjN0';
+            break;
+        default:
+            console.error('Unsupported platform:', platform);
+            return;
+    }
+
+    window.location.href = url;
+}
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow Us on Social Media</title>
+    <link rel="stylesheet" href="./fans.css">
+</head>
+<body>
+    <div class="container">
+        <div class="social-card">
+            <div class="social-view" id="tiktok-view">
+                <h2>TikTok</h2>
+                <img src="https://cdn.vectorstock.com/i/1000v/75/87/tiktok-logo-on-black-background-vector-35997587.avif" style="border-radius: 50%;" alt="TikTok" class="social-logo">
+            </div>
+            <button class="follow-btn" onclick="follow('tiktok')">Follow on TikTok</button>
+        </div>
+        <div class="social-card">
+            <div class="social-view" id="facebook-view">
+                <h2>Facebook</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-logo">
+            </div>
+            <button class="follow-btn" onclick="follow('facebook')">Follow on Facebook</button>
+        </div>
+        <div class="social-card">
+            <div class="social-view" id="instagram-view">
+                <h2>Instagram</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-logo">
+            </div>
+            <button class="follow-btn" onclick="follow('instagram')">Follow on Instagram</button>
+        </div>
+    </div>
+
+    <script src="js/fans.js"></script>
+</body>
+</html>
